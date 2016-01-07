@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bootstrap Grid Practice</title>
+    <meta name="description" content="Hello World">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Basic styles to help visualize nested columns -->
+    <style>
+    .grey {
+      background-color: grey;
+      padding: 20px;
+    }
+    .black {
+      color: white;
+      background-color: black;
+      padding: 20px;
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="jumbotron">
+        <div class="container">
+          <h1>Hello World</h1>
+          <h3>Grid System Practice</h3>
+        </div>
+      </div>
+    </header>
+
+    <!--Four column layout with two breakpoints and clearfix -->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-3">
+          <div class="well">First Column. Normcore sriracha wolf forage green juice. Twee kitsch +1 direct trade, brooklyn kinfolk gentrify ethical. Tumblr neutra biodiesel migas, locavore hella disrupt whatever food truck wayfarers beard ugh.</div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <div class="well">Second Column</div>
+        </div>
+        <div class="clearfix hidden-md hidden-lg"></div>
+        <div class="col-xs-6 col-md-3">
+          <div class="well">Third Column</div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <div class="well">Fourth Column</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offset column -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="well">This column is not offset</div>
+        </div>
+        <div class="col-md-4 col-md-offset-4">
+          <div class="well">This column is offset</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Nested columns -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 grey">.col-md-9
+          <div class="row">
+            <div class="col-md-6">
+              <div class="well">First nested column</div>
+            </div>
+            <div class="col-md-6">
+              <div class="well">Second nested column</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 black">.col-md-3</div>
+      </div>
+    </div>
+
+    <!-- Column ordering -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-push-6">
+          <div class="well">0000000000000000</div>
+        </div>
+        <div class="col-sm-6 col-sm-pull-6">
+          <div class="well">1111111111111111</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Some glyphicons -->
+    <div class="container">
+      <div class="col-sm-6 col-sm-offset-6">
+        <span class="glyphicon glyphicon-star"></span>
+        <span class="glyphicon glyphicon-thumbs-up"></span>
+      </div>
+    </div>
+
+    <!-- Sample danger alert with glyphicon -->
+    <div class="container">
+      <div class="alert alert-danger" role="alert">
+        <span class="glyphicon glyphicon-exclamation-sign"></span>
+        <span class="sr-only">Error:</span>
+        Enter a valid email address
+      </div>
+    </div>
+
+    <!-- Dropdown -->
+    <div class="container">
+      <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button"
+                       id="dropdownMenu1" data-toggle="dropdown">
+        Dropdown
+        <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Something else</a></li>
+          <li><a href="#">Another thing</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Below the divider</a></li>
+          <li class="disabled"><a href="#">Disabled link</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <hr>
+        <p><small><a href="#">First footer link</a></small></p>
+        <p><small><a href="#">Second footer link</a></small></p>
+        <p><small><a href="#">Third footer link</a></small></p>
+      </div>
+    </footer>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </body>
+</html>
